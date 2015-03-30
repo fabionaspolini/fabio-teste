@@ -1,0 +1,26 @@
+h2 Exclusão de cerveja
+
+h3 {{ msg }}
+
+p
+  b Nome: 
+  {{ cerveja.name }}
+
+  br
+  b Preço: 
+  {{ cerveja.price }}
+
+  br
+  b Teor alcoólico: 
+  {{ cerveja.alcohol }}
+
+  br
+  b Tipo: 
+  {{ cerveja.category }}
+  
+  br
+  b Descrição: 
+  {{ cerveja.description }}
+
+  p
+  button.btn.btn-lg(data-ng-click="remove(cerveja)") Remover

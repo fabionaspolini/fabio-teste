@@ -1,0 +1,27 @@
+h2 Cadastro de cerveja
+
+h3 {{ msg }}
+
+form.container-small
+  .form-group
+    label Nome: 
+    input.form-control(type="text", name="cerveja.name", data-ng-model="cerveja.name")
+
+  .form-group
+    label Categoria: 
+    input.form-control(type="text", name="cerveja.category", data-ng-model="cerveja.category")
+
+  .form-group
+    label Preço: 
+    input.form-control(type="text", name="cerveja.price", data-ng-model="cerveja.price")
+
+  .form-group
+    label Alcoól: 
+    input.form-control(type="text", name="cerveja.alcohol", data-ng-model="cerveja.alcohol")
+
+  .form-group
+    label Descrição: 
+    textarea.form-control(type="text", name="cerveja.description", data-ng-model="cerveja.description")
+
+  .form-group
+    button.btn.btn-lg(data-ng-click="create(cerveja)") Cadastrar
