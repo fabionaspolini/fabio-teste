@@ -3,8 +3,8 @@
 
 from centos:centos7
 
-RUM rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
-RUM rpm -Uvh http://mirror.globo.com/epel/epel-release-latest-7.noarch.rpm
+#RUN rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+RUN rpm -Uvh http://mirror.globo.com/epel/epel-release-latest-7.noarch.rpm
 
 RUN yum install -y npm
 
