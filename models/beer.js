@@ -1,7 +1,12 @@
 // Model de beer
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/workshop-criciuma');
+
+if (process.env.NODE_ENV == "production") {
+	mongoose.connect('mongodb://mongo/workshop-criciuma');
+} else {
+	mongoose.connect('mongodb://localhost/workshop-criciuma');
+}
 
 var db = mongoose.connection;
 
