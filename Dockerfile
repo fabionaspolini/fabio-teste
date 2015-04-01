@@ -1,5 +1,5 @@
-#docker build -t fabionaspolini/node-docker-sample .
 #docker run -it centos bash
+#docker build -t fabionaspolini/node-angular-express-docker .
 
 from centos
 
