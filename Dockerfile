@@ -8,7 +8,7 @@ RUN rpm -Uvh http://mirror.globo.com/epel/epel-release-latest-7.noarch.rpm
 
 RUN yum install -y npm
 
-COPY . / src
+COPY . /src
 
 WORKDIR /src
 RUN npm install
