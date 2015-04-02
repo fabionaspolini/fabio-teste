@@ -11,7 +11,7 @@
 #docker stats mongo																# exibir recursos de máquina utilizado pelo container (cpu, memória, rede)
 
 #docker run -d -p 3000:3000 --link mongo:mongo --name sample docker-sample		# criar link com o container mongo, especificar a porta 3000 do container da aplicação node para porta 3000 do servidor(Azure), 
-																				# diz que o container com o nome "mongo" será utilizado com o nome "mongo" dentro do container do node,
+																				# diz que o container com o nome "mongo" será utilizado com o nome "mongo" dentro do container "sample" que está o node.js,
 																				# define o nome "sample" para o conteiner "docker-sample"
 																				# liberar porta 3000 do servidor azure, e apontar ela para a porta externa 80 através do endpoint na interface do portal azure
 
@@ -22,8 +22,8 @@
 #docker exec -it sample bash													# enviar comando para o container informando que quer entrar no bash dele.
 																				# dentro do bash do container você pode efetuar alterações
 
-#docker commit -m 'modificado arquivos' docker-sample							# salvar alteração do container
-#docker push docker-sample														# publicar imagem no repositório oficial do docker
+#docker commit -m 'modificado arquivos' docker-sample image-name-tag			# salvar alteração do container
+#docker push fabionaspolini/docker-sample										# publicar imagem no repositório oficial do docker (precisa ser no formato autor/image)
 
 
 from centos:centos7
